@@ -43,7 +43,9 @@ const selectItem = (event, img) => {
     if (item === -1) {
         sliders.push(img);
     } else {
-        element.classList.remove('added');
+        const add = element.classList.remove('added');
+        sliders.pop(img);
+
     }
 }
 var timer
